@@ -122,11 +122,6 @@ public class VendorGsmCdmaPhone extends GsmCdmaPhone {
                 }
                 break;
 
-            case EVENT_GET_RADIO_CAPABILITY:
-                super.handleMessage(msg);
-                VendorSubscriptionController.getInstance().notifyRadioCapabilityAvailable();
-                break;
-
             default: {
                 super.handleMessage(msg);
             }
